@@ -56,7 +56,7 @@ To compile both the mandatory and bonus
 ```bash 
 make bonus
 ```
-#### 4. Run
+#### 3. Run
 ```bash 
 cc main.c libft.a
 ./a.out
