@@ -1,6 +1,7 @@
 #  Libft
 
 Libft is the very first project which recreates standard C library functions and implement additional utility functions from scratch.
+It is provided as a static library (libft.a) that you can link to your C projects.
 
 ## Features
 
@@ -39,3 +40,24 @@ make bonus    # Compile with bonus files
 make clean    # Remove object files
 make fclean   # Remove object files + library
 make re       # Recompile everything
+```
+
+## Usage
+### Requirement: 
+Linux OS
+### Installment:
+#### 1. Clone the Repository
+   ```bash
+   git clone https://github.com/TrangPham93/libft.git libft
+   cd libft
+   ```
+#### 2. Compile the Project
+To compile both the mandatory and bonus
+```bash 
+make bonus
+```
+#### 4. Run
+```bash 
+cc main.c libft.a
+./a.out
+```
