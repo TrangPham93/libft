@@ -6,7 +6,7 @@
 #    By: trpham <trpham@student.hive.fi>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/30 15:05:22 by trpham            #+#    #+#              #
-#    Updated: 2025/10/25 22:39:08 by trpham           ###   ########.fr        #
+#    Updated: 2025/10/25 22:49:33 by trpham           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -76,15 +76,16 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 all: $(NAME)
 
 $(NAME): $(OBJS)
-       @ar rcs $(NAME) $^
-       @echo "Compiled libft.a"
+	@ar rcs $(NAME) $^
+	@echo "Compiled libft"
+       
 
 bonus: $(BONUS_NAME) 
 
 $(BONUS_NAME): $(OBJS) $(OBJS_BONUS)
 	@ar rcs $(NAME) $^
 	@touch $(BONUS_NAME)
-       @echo "libft bonus is compiled"
+	@echo "Compiled libft && bonus"
 
 clean:
 	rm -rf $(OBJ_DIR)
